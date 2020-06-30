@@ -31,7 +31,7 @@ Introduced terminology:
 
 **Action spaces:** Action spaces refer to the set of actions an agent can take in a given state. Action spaces make be different in different states in a state space. Actions spaces can be discrete and continuous. 
 
-**Policies:** Policy is the rule an agent uses to decide what to do. There are deterministic (nothing is random) and stochastic (some randomness). Deterministic policy symbol is **"\mu"** and stochastic is **"\pi"** in equations. For Deep RL there are paramatrized policies that take in paramters for things such as weights in a NN, and paramters are represented by **"\theta"** or **"\phi"**. 
+**Policies:** Policy is the rule an agent uses to decide what to do. There are deterministic (nothing is random) and stochastic (some randomness). Deterministic policy symbol is **"[img]http://www.sciweavers.org/tex2img.php?eq=%20%5Cmu%20&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0[/img]"** and stochastic is **"\pi"** in equations. For Deep RL there are paramatrized policies that take in paramters for things such as weights in a NN, and paramters are represented by **"\theta"** or **"\phi"**. 
 
 In stochastic policies for Deep RL, categorical policies (discrete) and diagnol gaussian policies (continuous) are the most used. 
 

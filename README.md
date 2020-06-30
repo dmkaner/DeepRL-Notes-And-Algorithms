@@ -35,21 +35,21 @@ Introduced terminology:
 
 In stochastic policies for Deep RL, categorical policies (discrete) and diagnol gaussian policies (continuous) are the most used. 
 
-**Trajectories:** Trajectory a sequence of states and actions in the world: **![equation]()\tau = (s_0, a_0, s_1, a_1, ...)**. State transitions can be deterministic: **s_{t+1} = f(s_t, a_t)** or stochastic: **![equation]()s_{t+1} \sim P(\cdot|s_t, a_t)**.
+**Trajectories:** Trajectory a sequence of states and actions in the world: **![equation](https://bit.ly/3geD1Nb)**. State transitions can be deterministic: **![equation](https://bit.ly/2Amenem)** or stochastic: **![equation](https://bit.ly/3ihLiBN)**.
 
 Trajectories may also be reffered to as episodes. 
 
-**Different formulations of return:** The reward function is very important, denoted by **"R"** and is dependent on the current state, the current action taken, and the next state coming from that action: **![equation]()r_t = R(s_t, a_t, s_{t+1})**. The goal of the agent is to maximize the reward over the trajectory, unlinke a greedy algorithm which would just try to maximize it at the current state. 
+**Different formulations of return:** The reward function is very important, denoted by **"R"** and is dependent on the current state, the current action taken, and the next state coming from that action: **![equation](https://bit.ly/31x7S3i)**. The goal of the agent is to maximize the reward over the trajectory, unlinke a greedy algorithm which would just try to maximize it at the current state. 
 
-There is finite-horizon undiscounted return (sum of rewards in fixed window): **![equation]()R(\tau) = \sum_{t=0}^T r_t** and infinite-horizon discounted return (sum of all rewards): **![equation]()R(\tau) = \sum_{t=0}^{\infty} \gamma^t r_t**.
+There is finite-horizon undiscounted return (sum of rewards in fixed window): **![equation](https://bit.ly/2ZpmDCH)** and infinite-horizon discounted return (sum of all rewards): **![equation](https://bit.ly/2Vwzhij)**.
 
-**The RL optimization problem:** The goal in RL is to select the policy which maximizes **expected return**. Optimal policy for a stochastic policy is: **"![equation]()\pi^*"**. 
+**The RL optimization problem:** The goal in RL is to select the policy which maximizes **expected return**. Optimal policy for a stochastic policy is: **"![equation](https://bit.ly/3iopRiL)"**. 
 
 **Value function:** Value functions give you the value of a state or state-action pair, like showing how good having a flush is in poker. There are four main value functions:
-- On-Policy Value Function: **![equation]()V^{\pi}(s)** always act according to policy
-- On-Policy Action-Value Function: **![equation]()Q^{\pi}(s,a)** take an arbitrary action then always act according to policy
-- Optimal Value Function: **![equation]()V^*(s)** always act according to the optimal policy 
-- Optimal Action-Value Function: **![equation]()Q^*(s,a)** take an arbitrary action then always act according to optimal policy
+- On-Policy Value Function: **![equation](https://bit.ly/2NHUoKf)** always act according to policy
+- On-Policy Action-Value Function: **![equation](https://bit.ly/2AiwbqB)** take an arbitrary action then always act according to policy
+- Optimal Value Function: **![equation](https://bit.ly/3gi6YMt)** always act according to the optimal policy 
+- Optimal Action-Value Function: **![equation](https://bit.ly/2YP5FPf)** take an arbitrary action then always act according to optimal policy
 
 
 

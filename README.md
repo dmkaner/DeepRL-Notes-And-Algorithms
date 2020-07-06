@@ -14,8 +14,6 @@ Will be added soon.
 
 # Spinning Up Algorithms
 
-
-
 ## RL Notes from Spinning Up Docs
 
 Introduced terminology:
@@ -51,9 +49,13 @@ There is finite-horizon undiscounted return (sum of rewards in fixed window): **
 - Optimal Value Function: **![equation](https://bit.ly/3gi6YMt)** always act according to the optimal policy 
 - Optimal Action-Value Function: **![equation](https://bit.ly/2YP5FPf)** take an arbitrary action then always act according to optimal policy
 
+### Other important tidbits of info
+
+Model-free vs. model-based: a model of an environment is a function which predicts state transitions and rewards. The algorithms covered here will be mostly model-free.
 
 
-## Vanilla Policy Gradient
+
+<!-- ## Vanilla Policy Gradient
 
 VPG is an on policy algorithm which pushes up probabilities of high reward actions and pushes down probabilites of low reward actions, until you arive at the optimal policy. 
 
@@ -65,54 +67,25 @@ VPG is an on policy algorithm which pushes up probabilities of high reward actio
 
 ## Twin Delayed DDPG
 
-## Soft Actor-Critic
+## Soft Actor-Critic -->
 
+# Udacity DeepRL Notes
 
-<!-- # An Introduction to Deep Reinforcement Learning Notes
-[Book Here](https://arxiv.org/abs/1811.12560)
+**Episodic vs. Continuing tasks:** Episodic tasks have a well defined ending point like in a game of chess, and  continuing tasks do not, like the life space of a puppy robot perhaps. 
 
-## Chapter 1: Introduction
+**The reward hypothesis:** All goals can be framed as the maximization of expected cumulative rewards. 
 
-Chapter 1 just goes over the motivation of the book and lays out the contents of each chapter.
+Reward equations can be very important and interesting, prioritizng certain actions over time in a mathematical way. Take a robot that you want to teach how to walk from A to B as fast as possible. The reward equation might look like a multi-term equation where there is a term for the robots velocity, deviation from the forward direction, and a constant for not falling over time. Each term will add or subtract to the total given reward for the robot in that time frame. 
 
-## Chapter 2: Machine Learning & Deep Learning
+**Cumulative reward:** It is important to give the robot the objective of increasing cumulative rewards and not just maximizing the nearest reward, for that would be a greedy algorithm and is often not too performant. We call this cumulative reward **return**. 
 
-Machine learning is ultimately a form of pattern recognition and can be summarized in three topics, being: 
-- Supervised Learning: training from labeled data
-- Unsupervised Learning: training from unlabeled data
-- Reinforcement Learning: training to maximize cumulative rewards from certain actions
+**Discounted return:** Discounted return refers to making future expected rewards less significant. 
 
-All three of these are greatly helped through function approximators, which are essentially the heart of ML. Some examples being:
-- Linear models
-- SVMs
-- Descision trees
-- Gaussian processes
-- Deep Learning
+**Markov Decision Process:** MDP is muy importante! And useful. We define reinforcment learning problems as MDPs so they are in a format that we can apply our algorithms to. It's defined as a set of states, actions, and rewards with one step dynamics and a discount rate. 
 
-### Supervised learning and the concepts of bias and overfitting
+**Policy:** A policy is what interprets the current state and produces an output, being an action. Hopefully a good one. Choosing a definite action is deterministic, and choosing an action with some randomality is stochastic. 
 
-### Unsupervised learning
+**State-value fucntion:** The state-value function yields the expected return if the agent started in the specific state and followed the policy for all time steps. 
 
-### The deep learning approach
+**Bellman equations:** Bellman equations can simplified down to this: The state-value of a certain state can be recursively obtained by the expected return of the current state plus the discounted state-value of the next state. 
 
-
-
-## Chapter 3: Intro to RL
-
-## Chapter 4: Value-based Methods for Deep RL
-
-## Chapter 5: Policy Gradient Methods for Deep RL
-
-## Chapter 6: Model-base Methods for Deep RL
-
-## Chapter 7: The Concept of Generalization
-
-## Chapter 8: Particular Challenges in the Online Setting
-
-## Chapter 9: Benchmarking Deep RL
-
-## Chapter 10: Deep RL Beyond MDPs
-
-## Chapter 11: Perspectives on Deep RL 
-
-## Chapter 12: Conclusion -->
